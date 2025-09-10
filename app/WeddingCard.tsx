@@ -33,7 +33,7 @@ export default function WeddingCard() {
 
   return (
     <div
-      className="relative w-[380px] rounded-2xl p-6
+      className="relative w-full max-w-[380px] rounded-2xl p-6
         bg-white/20 backdrop-blur-[1px] shadow-xl border border-white/30
         flex flex-col items-center text-center space-y-3"
     >

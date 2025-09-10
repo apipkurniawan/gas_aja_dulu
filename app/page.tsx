@@ -16,10 +16,10 @@ export default function Home() {
       <div className="absolute inset-0 flex flex-col items-center justify-end pb-12 bg-black/30">
         {/* name */}
         <div className="flex gap-24 mb-14">
-          <h1 className="text-[#f5a7b8] drop-shadow-[2px_1px_0px_green] text-2xl font-bold">
+          <h1 className="text-[#f5a7b8] text-center drop-shadow-[2px_1px_0px_green] font-[var(--font-great-vibes)] text-2xl">
             Nandara Apriliya
           </h1>
-          <h1 className="text-[#f5a7b8] drop-shadow-[2px_1px_0px_green] text-2xl font-bold">
+          <h1 className="text-[#f5a7b8] text-center drop-shadow-[2px_1px_0px_green] font-[var(--font-great-vibes)] text-2xl">
             Apip Kurniawan
           </h1>
         </div>
