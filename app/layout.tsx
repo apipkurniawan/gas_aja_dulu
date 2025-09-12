@@ -16,7 +16,7 @@ const comicRelief = Comic_Relief({
   display: "swap",
 });
 
-export const metadata = {
+const metadata = {
   title: "Our Wedding - Apip & Nandara Apriliya",
   description: "Undangan Pernikahan Apip & Nandara Apriliya",
   openGraph: {
