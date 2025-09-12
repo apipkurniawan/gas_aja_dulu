@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import WeddingCard from "./WeddingCard";
-import { rougeScript } from "./layout";
+import { rougeScript } from "../layout";
 import { useRef } from "react";
 
 export default function Main() {
