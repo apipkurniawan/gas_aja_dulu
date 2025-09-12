@@ -4,6 +4,7 @@ import Image from "next/image";
 import WeddingCard from "./WeddingCard";
 import { rougeScript } from "../layout";
 import { useRef } from "react";
+import MapsSection from "./Maps";
 
 export default function Main() {
   const section1Ref = useRef<HTMLDivElement>(null);
@@ -31,10 +32,11 @@ export default function Main() {
             priority
             unoptimized
           />
+
           <div className="absolute inset-0 flex flex-col items-center justify-end pb-12 bg-black/30">
             {/* name */}
             <div
-              className={`${rougeScript.className} flex flex-col justify-center items-center mb-14`}
+              className={`${rougeScript.className} flex flex-col justify-center items-center mb-9`}
             >
               <h1 className="text-[#f5a7b8] text-center drop-shadow-[2px_1px_0px_green] text-2xl">
                 Nandara Apriliya
@@ -63,12 +65,17 @@ export default function Main() {
       {/* Section 2 */}
       <div
         ref={section2Ref}
-        className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-emerald-200 to-teal-400 snap-start"
+        className="h-screen flex flex-col gap-6 items-center justify-center bg-gradient-to-br from-[#dcc5b2] to-[#8A784E] snap-start"
       >
-        <h1 className="text-4xl font-bold text-white">About Section</h1>
+        <h1 className="text-2xl font-bold text-white">
+          Lokasi Akad Nikah & Resepsi
+        </h1>
+
+        <MapsSection />
+
         <button
           onClick={() => handleScroll(section3Ref)}
-          className="mt-6 px-6 py-3 bg-white/30 text-white rounded-lg shadow-lg backdrop-blur hover:bg-white/50"
+          className="mt-12 px-6 py-3 bg-white/30 text-white rounded-lg shadow-lg backdrop-blur hover:bg-white/50"
         >
           Next ⬇️
         </button>
