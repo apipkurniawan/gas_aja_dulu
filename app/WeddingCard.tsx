@@ -49,8 +49,10 @@ export default function WeddingCard() {
       </div>
 
       {/* Akad Nikah & Resepsi */}
-      <div className="w-full p-4 rounded-xl bg-black/40 text-white">
-        <h3 className="text-base font-semibold">Akad Nikah & Resepsi</h3>
+      <div className="w-full flex justify-center flex-col items-center p-4 rounded-xl bg-black/40 text-white">
+        <div className="py-1 px-2 w-max bg-gradient-to-br from-[#f5a7b8] via-[#f7b1b3] to-[#e998a8] rounded-md bg-black/30 text-emerald-700 tracking-wide">
+          <h3 className="text-base font-semibold">Akad Nikah & Resepsi</h3>
+        </div>
         <p className="text-sm mt-1">Sabtu, 6 Desember 2025</p>
         <p className="text-sm">08:00 - 16:00 WIB</p>
         <p className="text-sm italic mt-1">
@@ -59,8 +61,8 @@ export default function WeddingCard() {
       </div>
 
       {/* countdown */}
-      <div className="mt-4 px-4 py-2 bg-gradient-to-br from-[#f5a7b8] via-[#f7b1b3] to-[#e998a8] rounded-xl bg-black/30 text-emerald-700 font-mono text-lg tracking-wide">
-        {timeLeft}
+      <div className="flex justify-end w-full">
+        <p className="text-xs text-gray-200 text-end">{timeLeft}</p>
       </div>
     </div>
   );

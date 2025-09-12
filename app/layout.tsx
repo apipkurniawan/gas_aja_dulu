@@ -1,24 +1,24 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Great_Vibes, Playfair_Display } from "next/font/google";
+import { Comic_Relief, Rouge_Script } from "next/font/google";
 
 // Font untuk nama mempelai
-const greatVibes = Great_Vibes({
+export const rougeScript = Rouge_Script({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-great-vibes", // optional pakai CSS variable
+  display: "swap",
 });
 
 // Font untuk detail acara
-const playfair = Playfair_Display({
+const comicRelief = Comic_Relief({
   subsets: ["latin"],
-  weight: ["400", "700"], // bisa pilih beberapa varian
-  variable: "--font-playfair",
+  weight: ["400", "700"],
+  display: "swap",
 });
 
 export const metadata = {
-  title: "Undangan Pernikahan",
-  description: "Website Undangan Apip Kurniawan & Nandara Apriliya",
+  title: "Our Wedding - Apip & Nandara Apriliya",
+  description: "Undangan Pernikahan Apip & Nandara Apriliya",
   openGraph: {
     title: "Undangan Pernikahan Apip & Nandara Apriliya",
     description: "Jangan lewatkan momen spesial kami 💍",
@@ -29,7 +29,7 @@ export const metadata = {
         url: "https://yourdomain.com/og-image.jpg", // taruh file di /public
         width: 1200,
         height: 630,
-        alt: "Apip & Sinta Wedding",
+        alt: "Apip & Nandara Apriliya",
       },
     ],
     locale: "id_ID",
@@ -50,11 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${greatVibes.variable} ${playfair.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${comicRelief.className} antialiased`}>{children}</body>
     </html>
   );
 }
