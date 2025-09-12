@@ -61,9 +61,9 @@ export default function WeddingCard() {
       </div>
 
       {/* countdown */}
-      <div className="flex justify-end w-full">
+      {/* <div className="flex justify-end w-full">
         <p className="text-xs text-gray-200 text-end">{timeLeft}</p>
-      </div>
+      </div> */}
     </div>
   );
 }
