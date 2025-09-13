@@ -18,7 +18,13 @@ export default function Main() {
     <div className="h-screen w-screen overflow-hidden snap-y snap-mandatory overflow-y-scroll">
       {/* Section 1 */}
       <div ref={section1Ref} className="h-screen snap-start">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense
+          fallback={
+            <div className="flex justify-center items-center h-screen w-screen">
+              Loading...
+            </div>
+          }
+        >
           <Cover onNext={() => handleScroll(section2Ref)} />
         </Suspense>
       </div>
