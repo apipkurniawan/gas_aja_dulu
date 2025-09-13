@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { funnelSans, rougeScript } from "../layout";
 import { useSearchParams } from "next/navigation";
