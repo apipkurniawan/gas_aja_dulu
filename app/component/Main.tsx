@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 import MapsSection from "./Maps";
 import Cover from "./Cover";
 import Weddings from "./Weddings";
@@ -18,7 +18,9 @@ export default function Main() {
     <div className="h-screen w-screen overflow-hidden snap-y snap-mandatory overflow-y-scroll">
       {/* Section 1 */}
       <div ref={section1Ref} className="h-screen flex snap-start">
-        <Cover onNext={() => handleScroll(section2Ref)} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Cover onNext={() => handleScroll(section2Ref)} />
+        </Suspense>
       </div>
 
       {/* Section 2 */}
