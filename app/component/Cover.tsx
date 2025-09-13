@@ -11,7 +11,7 @@ export default function Cover({ onNext }: { onNext: () => void }) {
   const address = searchParams.get("address");
 
   return (
-    <div className="relative h-full">
+    <div className="relative h-full flex justify-center">
       <Image
         src="/foto1.jpeg"
         alt="wedding"
@@ -27,13 +27,13 @@ export default function Cover({ onNext }: { onNext: () => void }) {
         <div
           className={`${rougeScript.className} flex flex-col justify-center items-center mb-9`}
         >
-          <h1 className="text-[#f5a7b8] text-center drop-shadow-[2px_1px_0px_green] text-5xl">
+          <h1 className="text-[#f5a7b8] text-center drop-shadow-[2px_1px_0px_green] text-4xl">
             Nandara Apriliya
           </h1>
-          <h2 className="text-[#f5a7b8] text-center drop-shadow-[2px_1px_0px_green] text-3xl">
+          <h2 className="text-[#f5a7b8] text-center drop-shadow-[2px_1px_0px_green] text-2xl">
             &
           </h2>
-          <h1 className="text-[#f5a7b8] text-center drop-shadow-[2px_1px_0px_green] text-5xl">
+          <h1 className="text-[#f5a7b8] text-center drop-shadow-[2px_1px_0px_green] text-4xl">
             Apip Kurniawan
           </h1>
         </div>

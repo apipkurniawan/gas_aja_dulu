@@ -17,14 +17,17 @@ export default function Main() {
   return (
     <div className="h-screen w-screen overflow-hidden snap-y snap-mandatory overflow-y-scroll">
       {/* Section 1 */}
-      <div ref={section1Ref} className="h-screen flex snap-start">
+      <div ref={section1Ref} className="h-screen snap-start">
         <Suspense fallback={<div>Loading...</div>}>
           <Cover onNext={() => handleScroll(section2Ref)} />
         </Suspense>
       </div>
 
       {/* Section 2 */}
-      <div ref={section2Ref} className="h-screen snap-start">
+      <div
+        ref={section2Ref}
+        className="h-screen snap-start flex justify-center items-center"
+      >
         <Weddings onNext={() => handleScroll(section3Ref)} />
       </div>
 
